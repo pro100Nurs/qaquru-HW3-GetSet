@@ -12,4 +12,8 @@ public class Population {
                 + population + " человек и это " + percent + "% от населения Земли.");
     }
 
+    public void incrementPopulation() {
+        population++;
+        System.out.println("\nUPD. +1 житель добавилься к страну " + name + ". Теперь население составляет " + population + " человек.");
+    }
 }
