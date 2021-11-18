@@ -53,4 +53,9 @@ public class DensityPopulation {
         System.out.println("\nUPD. -" + x + " человек эмигрировано из страны " + name + " в другую. Население составляет "
                 + newPopulation + " и плотность " + newDensity + " чел./км²");
     }
+
+    public void printDensityInfo(String name, int population, double area, int density) {
+        System.out.println("\nПлотность населения:\nСтрана " + name + ". Население " + population + " человек. Плотность населения составляет "
+                + density + " чел./км² и площадь в км²: " + area + ".");
+    }
 }

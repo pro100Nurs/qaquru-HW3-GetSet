@@ -3,8 +3,6 @@ package guru.qa;
 public class Main {
     public static void main(String[] args) {
 
-        PrintInfo printInfo = new PrintInfo();
-
         Population.sayClassName();
         Population.Source.printSource();
 
@@ -13,7 +11,7 @@ public class Main {
         china.setRegion("Азия");
         china.setPopulation(1411778724);
         china.setPercent(17.9);
-        printInfo.printPopulationInfo(china.getName(), china.getRegion(), china.getPopulation(), china.getPercent());
+        china.printPopulationInfo(china.getName(), china.getRegion(), china.getPopulation(), china.getPercent());
 
         china.incrementPopulation();
 
@@ -24,7 +22,7 @@ public class Main {
         monaco.setPopulation(38682);
         monaco.setArea(2.02);
         monaco.setDensity(19341);
-        printInfo.printDensityInfo(monaco.getName(), monaco.getPopulation(), monaco.getArea(), monaco.getDensity());
+        monaco.printDensityInfo(monaco.getName(), monaco.getPopulation(), monaco.getArea(), monaco.getDensity());
 
         monaco.downDensity(10);
 

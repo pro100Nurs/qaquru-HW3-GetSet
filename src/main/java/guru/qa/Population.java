@@ -59,4 +59,9 @@ public class Population {
             System.out.println("\nOfficial source: " + sourceInfo);
         }
     }
+
+    public void printPopulationInfo(String name, String region, int population, double percent) {
+        System.out.println("\nЧисленность населения:\nСтрана " + name + " относиться к региону " + region + ". Население составляет "
+                + population + " человек и это " + percent + "% от населения Земли.");
+    }
 }
